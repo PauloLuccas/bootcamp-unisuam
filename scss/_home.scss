@@ -1,0 +1,170 @@
+@import 'variables';
+
+body {
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex(column, center, center);
+    height: 66.0rem;
+
+    .s-main {
+        margin-bottom: 10.5rem;
+        position: relative;
+
+        .container {
+            width: 75.0rem;
+            height: 24.0rem;
+            @include flex(row, center, space-between);
+
+            .left-container {
+                height: 100%;
+                img {
+                    width: 34.0rem;
+                    margin-bottom: 3.1rem;
+                }
+    
+                p {
+                    font-size: 24.5px;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    line-height: 40px;
+    
+                    /* Text style for "Um" */
+                    .p_1 {
+                        font-weight: 800;
+                        letter-spacing: 2.12px;
+                    }
+    
+                    /* Text style for "olhar dife" */
+                    .p_2 {
+                        font-weight: 800;
+                        letter-spacing: 2.12px;
+                        color: $color2;
+                    }
+    
+                    /* Text style for "traz novas" */
+                    .p_3,
+                    .p_4 {
+                        font-weight: 400;
+                        letter-spacing: 2.12px;
+                    }
+    
+                    /* Text style for "novas ideias" */
+                    .p_4 {
+                        background-color: $color2;
+                        padding: 2px;
+                    }
+                }
+            }
+
+            .right-container {
+                @include flex(column, center, space-between);
+                height: 100%;
+
+                p {
+                    color: $color5;
+                    font-weight: 700;
+                    font-size: 55px;
+                    line-height: 97.04px;
+                    text-align: center;
+                }
+                
+                .online {
+                    @include flex(row, center, space-around);
+
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                        font-weight: 300;
+                        text-align: center;
+                        margin-left: 1rem;
+                        color: $color1;
+                    }
+                }
+
+                .commands {
+                    @include flex(column, center, space-between);
+
+                    button {
+                        width: 300px;
+                        height: 56px;
+                        color: $color1;
+                        font-size: 19px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        border-radius: 3rem;
+                        margin-top: 3rem;
+                    }
+
+                    .check_regulation {
+                        background-color: $color3;
+                    }
+
+                    .sign_up {
+                        background-color: $color4;
+                    }
+                }
+            }
+        }
+
+        .grafismo2,
+        .grafismo3 {
+            position: absolute;
+            width: 100px;
+            top: -6rem;
+        }
+
+        .grafismo2 {
+            right: -25rem;
+        }
+
+        .grafismo3 {
+            left: -25rem;
+        }
+    }
+
+    footer {
+        margin-top: 3rem;
+        position: relative;
+
+        .container {
+            width: 75.0rem;
+            @include flex(row, center, center);
+
+            .pollen {
+                margin-right: 5rem;
+                img {
+                    width: 85px;
+                }
+            }
+
+            .careers {
+                img {
+                    width: 165px;
+                }
+            }
+        }
+
+        .grafismo1,
+        .grafismo_cinza {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .grafismo1 {
+            width: 160px;
+            right: -25rem;
+        }
+
+        .grafismo_cinza {
+            width: 300px;
+            bottom: -20rem;
+            right: -44rem;
+        }
+    }
+}
