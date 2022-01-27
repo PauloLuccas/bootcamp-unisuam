@@ -2,7 +2,7 @@
   BootCamp Unisuam
 </h1>
 
-<!-- ![cover](https://github.com/PauloLuccas/Gameplay/blob/65725d8b12d760e257967ba3efb05a0c5b529e63/assets/cover.png) -->
+![cover](https://github.com/PauloLuccas/bootcamp-unisuam/blob/master/img/bootcamp.psd.png?raw=true)
 
 
 ## 💻 Projeto
