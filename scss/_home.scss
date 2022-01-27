@@ -4,8 +4,9 @@ body {
     background-image: url('../img/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 70rem;
+
     @include flex(column, center, center);
-    height: 66.0rem;
 
     .s-main {
         margin-bottom: 10.5rem;
@@ -14,6 +15,7 @@ body {
         .container {
             width: 75.0rem;
             height: 24.0rem;
+            
             @include flex(row, center, space-between);
 
             .left-container {
@@ -22,7 +24,7 @@ body {
                     width: 34.0rem;
                     margin-bottom: 3.1rem;
                 }
-    
+                
                 p {
                     font-size: 24.5px;
                     text-transform: uppercase;
@@ -53,6 +55,19 @@ body {
                     .p_4 {
                         background-color: $color2;
                         padding: 2px;
+                    }
+                }
+
+                @include responsive(375px) {
+                    img {
+                        width: 30rem;
+                    }
+
+                    p {
+                        font-size: 23.5px;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                        line-height: 40px;
                     }
                 }
             }
@@ -111,6 +126,34 @@ body {
             }
         }
 
+        @include responsive(767px) {
+            .container {
+                height: 65%;
+                margin-top: 40rem;
+                position: relative;
+
+                @include flex(column, center, center);
+
+                .right-container {
+                    @include flex(column, center, center);
+                }
+            }
+        }
+
+        @include responsive(500px) {
+            .container {
+                height: 75%;
+                margin-top: 30rem;
+            }
+        }
+
+        @include responsive(375px) {
+            .container {
+                height: 90%;
+                margin-top: 13rem;
+            }
+        }
+
         .grafismo2,
         .grafismo3 {
             position: absolute;
@@ -124,6 +167,74 @@ body {
 
         .grafismo3 {
             left: -25rem;
+        }
+
+
+        @include responsive(1280px) {
+            .grafismo2,
+            .grafismo3 {
+                width: 80px;
+            }
+    
+            .grafismo2 {
+                right: -20rem;
+            }
+    
+            .grafismo3 {
+                left: -20rem;
+            }
+        }
+
+        @include responsive(1150px) {
+            .grafismo2 {
+                right: -12rem;
+            }
+    
+            .grafismo3 {
+                left: -12rem;
+            }
+        }
+
+        @include responsive(1000px) {
+            .grafismo2 {
+                right: -8rem;
+            }
+    
+            .grafismo3 {
+                left: -8rem;
+            }
+        }
+
+        @include responsive(900px) {
+            .grafismo2 {
+               display: none;
+            }
+        }
+
+        @include responsive(800px) {
+            .grafismo3 {
+                left: -2rem;
+                top: -10rem;
+            }
+        }
+
+        @include responsive(767px) {
+            .grafismo3 {
+                left: 8rem;
+                top: -8rem;
+            }
+        }
+
+        @include responsive(500px) {
+            .grafismo3 {
+                display: none;
+            }
+        }
+    }
+
+    @include responsive(375px) {
+        .s-main {
+            margin-bottom: 6.5rem;
         }
     }
 
@@ -166,5 +277,80 @@ body {
             bottom: -20rem;
             right: -44rem;
         }
+
+        @include responsive(1280px) {
+            .grafismo1 {
+                width: 150px;
+                right: -20rem;
+                bottom: -3rem;
+            }
+
+            .grafismo_cinza {
+                width: 250px;
+                bottom: -20rem;
+                right: -36rem;
+            }
+        }
+
+        @include responsive(1150px) {
+            .grafismo1 {
+                width: 150px;
+                right: -12rem;
+                bottom: -4rem;
+            }
+
+            .grafismo_cinza {
+                width: 250px;
+                bottom: -20rem;
+                right: -31rem;
+            }
+        }
+
+        @include responsive(1000px) {
+            .grafismo1 {
+                right: -8rem;
+            }
+
+            .grafismo_cinza {
+                right: -24rem;
+            }
+        }
+
+        @include responsive(900px) {
+            .grafismo_cinza {
+                display: none;
+            }
+        }
+
+        @include responsive(800px) {
+            .grafismo1 {
+                right: -2rem;
+                bottom: -7rem;
+                width: 134px;
+            }
+        }
+
+        @include responsive(767px) {
+            .grafismo1 {
+                right: 2rem;
+                bottom: -7rem;
+            }
+        }
+
+        @include responsive(500px) {
+            .grafismo1 {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+
+@include responsive(767px) {
+    html,
+    body {
+        overflow: auto;
+        overflow-x: hidden;
+        min-height: 60rem;
     }
 }
