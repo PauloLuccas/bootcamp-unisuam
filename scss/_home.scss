@@ -113,14 +113,28 @@ body {
                         text-transform: uppercase;
                         border-radius: 3rem;
                         margin-top: 3rem;
+                        cursor: pointer;
                     }
 
                     .check_regulation {
                         background-color: $color3;
+                        transition: all .3s;
+
+                        &:hover {
+                            background-color: $color6;
+                            border: 2px solid $color3;
+                        }
                     }
 
                     .sign_up {
                         background-color: $color4;
+
+                        transition: all .3s;
+
+                        &:hover {
+                            background-color: $color7;
+                            border: 2px solid $color4;
+                        }
                     }
                 }
             }
