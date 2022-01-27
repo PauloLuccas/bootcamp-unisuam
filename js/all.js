@@ -1,1 +1,1 @@
-"use strict";console.log("buttons"),console.log("modal");
+"use strict";var signUp=function(){var e=document.querySelector(".modal");e.style.display="inline-block",setTimeout(function(){e.style.display="none"},3e3)};$(".sign_up").click(function(){var e="paulolucas.dev@gmail.com";console.log(e);$.ajax({type:"POST",url:"http://localhost:5000/",async:!0,headers:{"Content-Type":"application/x-www-form-urlencoded"},data:"&nome=Unisuam&email=paulolucas.dev@gmail.com&msg=Uma inscrição foi efetuada!",success:function(e){$("#retornoHTML").html(e)}}),signUp()});
